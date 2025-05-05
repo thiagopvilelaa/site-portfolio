@@ -1,0 +1,111 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Fonte geral */
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    position: relative;
+    height: 100vh;
+  }
+  
+  header {
+    background-color: #111;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin-bottom: 0.5rem;
+  }
+  
+  nav a {
+    color: #ddd;
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #00d8ff;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+  }
+  
+  h2 {
+    margin-bottom: 1rem;
+    color: #222;
+    border-left: 5px solid #00d8ff;
+    padding-left: 0.5rem;
+  }
+  
+  .projetos {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  
+  .projeto {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .projeto:hover {
+    transform: translateY(-5px);
+  }
+  
+  .projeto h3 {
+    margin-bottom: 0.5rem;
+    color: #0077cc;
+  }
+  
+  .projeto a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    color: #00aaff;
+    font-weight: bold;
+  }
+  
+  footer {
+    width:100%;
+    text-align: center;
+    padding: 2rem;
+    background-color: #111;
+    color: white;
+    margin-top: 4rem;
+    position: absolute;
+    bottom:0;
+  }
+
+#especialidades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#especialidades div{
+    margin:1rem 0 0 0;
+    width:fit-content;
+    height:fit-content;
+}
+
+#especialidades div img{
+    width:4rem;
+    height:4rem;
+    margin:1rem 1rem 0 0 ;
+}
